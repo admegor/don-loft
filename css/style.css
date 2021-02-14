@@ -1,0 +1,262 @@
+/* font-family: 'Fira Sans', sans-serif; */
+/* font-family: 'Oswald', sans-serif; */
+
+/* scaffolding */
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    background-color: #E5E5E5;
+    color: #4F4F4F;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1244px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.title-separator {
+    display: inline-block;
+    margin-left: 90px;
+}
+
+.btn {
+    border: none;
+    background-color: transparent;
+}
+
+.btn:focus {
+    outline: none;
+    border: 2px solid #644c2b;
+    background-color: rgba(185, 139, 74, 0.034);
+}
+
+.btn-primary {
+    width: 134px;
+    height: 134px;
+    border-radius: 50%;
+    border: 2px solid #EACDA3;
+    color: #EACDA3;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    margin-bottom: 66px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    border: 2px solid #b39874;
+    color: #b39874;
+}
+
+.title-section {
+    font-family: 'Oswald', sans-serif;
+    font-size: 44px;
+    line-height: 155%;
+    font-weight: 400;
+    letter-spacing: 0.018em;
+    text-transform: uppercase;
+    color: #393A39;
+    margin: 0;
+    margin-bottom: 6px;
+}
+
+.subtitle-section {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 90px;
+}
+
+/* /scaffolding */
+
+/* header */
+
+.header {
+    height: 100px;
+}
+
+.header__wrap {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header__nav {
+    margin-left: 105px;
+    margin-right: auto;
+}
+
+.header__nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.header__nav ul li + li {
+    margin-left: 45px;
+}
+
+.header__nav ul li a,
+.header__phone {
+    text-decoration: none;
+    color: #B4B4B4;
+    transition: .2s;
+}
+
+.header__nav ul li a:hover,
+.header__phone:hover {
+    color: #BC9C71;
+}
+
+/* header */
+
+/* main */
+
+.hero {
+    background: url("../img/hero.jpg") no-repeat center bottom;
+    background-size: cover;
+    margin-top: -100px;
+}
+
+.hero__title {
+    margin: 0;
+    padding-top: 200px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 71px;
+    line-height: 130%;
+    font-weight: 400;
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+    color: #D8D8D8;
+    margin-bottom: 16px;
+}
+
+.hero__subtitle {
+    margin: 0;
+    line-height: 24px;
+    color: #B4B4B4;
+    margin-bottom: 50px;
+}
+
+/* .main */
+
+/* description */
+
+.description {
+    padding-top: 130px;
+}
+
+.description__counter {
+    font-size: 35px;
+    line-height: 155%;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    margin-bottom: 4px;
+
+    color: #BC9C71;
+}
+
+.description__item--furniture .description__text {
+    max-width: 277px;
+}
+
+.description__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.description__item {
+    padding-top: 56px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.description__counter {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.description__text {
+    margin: 0;
+    line-height: 24px;
+}
+
+.description__item--furniture {
+    width: 528px;
+    margin-right: auto;
+}
+
+.description__item--solid-wood {
+    width: 590px;
+}
+
+.description__item--paint-job {
+    width: 316px;
+    flex-direction: column;
+    margin-top: 65px;
+    margin-right: auto;
+    justify-content: start;
+}
+
+.description__item--paint-job .description__text-wrapper {
+    margin-bottom: 40px;
+}
+
+.description__item--fabric-materials {
+    width: 805px;
+    margin-top: 65px;
+}
+
+.description__item--resin {
+    margin-top: 27px;
+    margin-left: -100px;
+}
+
+.description__item--resin .description__text-wrapper {
+    width: 276px;
+    margin-right: 40px;
+}
+
+
+/* /description */
